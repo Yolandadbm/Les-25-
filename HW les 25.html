@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mijn pagina</title>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#idTekstveld1").val();
+var afspraak = $("#idTekstveld2").val();
+var telefoon = $("#idTekstveld3").val();
+window.alert(
+"Best " +  naam  + " op de door jou gekozen datum " + afspraak + " zal een medewerker telefonische contact met je opnemen op het door jouw doorgeven telelefoonnumer " + telefoon );
+});
+});
+</script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+<h3>Aanmelden telefonische afspraak</h3>
+</header>
+<form>
+    <table>
+    <tr>
+    <td>Vul hier je <u>voor</u> een <u>achternaam</u> in</td>
+    <td><input type="text" id="idTekstveld1"></td>
+    </tr>
+    <tr>
+    <td>Vul datum afspraak in</td>
+    <td><input type="date" id="idTekstveld2"></td>
+    </tr>
+    <tr>
+    <td>Vul hier je telefoonnummer in </td>
+    <td><input type="tel" id="idTekstveld3" ></td>
+    </tr>
+    <tr>
+    <td>Geef reden van het contact door</td>
+    <td><input type="text"></td>
+    </tr>
+    <tr></tr>
+    <td><input id="knop"  name="knop" value="klik hier"></td>
+    </table>
+</form>
+<footer>
+
+</footer>
+</body>
+</html>
